@@ -10,6 +10,6 @@
 	"license": "MIT",
 	"dependencies": {
 		"babel": "^6.23.0",
-		"enduro": "*"
+		"enduro": "^1.4.46"
 	}
 }
