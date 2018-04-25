@@ -9,29 +9,80 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
     crossorigin="anonymous">
-    <!-- Own CSS -->
+  <!-- Own CSS -->
   <link rel="stylesheet" href="/assets/css/main.css">
 
-  <title>Hello, world!</title>
+  <title>Q2d</title>
+  <script type="text/javascript">
+    function checkScroll() {
+      let startY = $('.navbar').height() * 1.1; //The point where the navbar changes in px
+
+      if ($(window).scrollTop() > startY) {
+        $('.navbar').addClass("scrolled");
+      } else {
+        $('.navbar').removeClass("scrolled");
+      }
+    }
+
+    if ($('.navbar').length > 0) {
+      $(window).on("scroll load resize", function () {
+        checkScroll();
+      });
+    }
+  </script>
 </head>
-{{>header}}
+<!--{{>header}} -->
 
 <body>
-  <div class="container-fluid">
-  
+  <div class="banner">
+    <div class="container-fluid">
 
-            
-           
-    <img class="img-fluid" src="../assets/img/a.jpg" alt="Card image cap"> 
- 
+      <nav class="navbar fixed-top navbar-expand-lg my-navbar">
+        <a class="navbar-brand" href="#"><h1 class="display-3">Q2d Solutions</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-   
-</div>
-     
-        
-     
-    <h1>Vi tar dina affärer till webben och mobilen</h1> 
-  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav mr-auto ml-auto w-100 justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Startsidan
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tjänster</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Utbildning
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Workshops</a>
+                <a class="dropdown-item" href="#">App bygge</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Om oss</a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+
+
+
+
+  <h1>Vi tar dina affärer till webben och mobilen</h1>
+
 
   {{>footer}}
   <!-- Optional JavaScript -->
@@ -42,6 +93,7 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
     crossorigin="anonymous"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

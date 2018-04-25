@@ -1,22 +1,34 @@
 @import 'variables/*';
 
-.card { 
-    border:none; 
-} 
- 
-.centered { 
-    position: absolute; 
-    color:black; 
-    font-size: 30px; 
-    top: 25%; 
-    left: 15%; 
-    transform: translate(-25%, -25%); 
-} 
- 
-.workshop { 
-    height:50%; 
-    width: 50%; 
+.banner {
+    width: 100%;
+    height: 1000px;
+    background: url('/assets/img/beach.jpg');
 }
-#logo {
-    width: 130px;
+
+.my-navbar {
+    
+    border: 0;
+    border-radius: 0;
+    
+    
 }
+
+ .my-navbar .navbar-brand {
+    color: white;
+ }
+
+ .my-navbar .navbar-nav li a {
+     color: white;
+ }
+
+ .my-navbar .navbar-nav .dropdown-menu a {
+     color:black !important;
+ }
+
+ .navbar.scrolled {
+    background: #444444;
+    /* IE */
+    background: rgba(67, 82, 90, 0.95);
+    /* NON-IE */
+  }
