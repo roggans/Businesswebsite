@@ -13,25 +13,17 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <title>Q2d</title>
-  <script type="text/javascript">
-    function checkScroll() {
-      let startY = $('.navbar').height() * 1.1; //The point where the navbar changes in px
-
-      if ($(window).scrollTop() > startY) {
-        $('.navbar').addClass("scrolled");
-      } else {
-        $('.navbar').removeClass("scrolled");
-      }
-    }
-
-    if ($('.navbar').length > 0) {
-      $(window).on("scroll load resize", function () {
-        checkScroll();
-      });
-    }
-  </script>
+ 
 </head>
 <!--{{>header}} -->
+
+
+
+
+
+ 
+
+
 
 <body>
   <div class="banner">
@@ -73,10 +65,50 @@
           
         </div>
       </nav>
-    </div>
+       <div class="centered">
+    <p><h1>Licensfria webbportaler och <br>mobila appar</h1>
+    <h2>Snabbt, användarvänligt, säkert <br>och kostnadseffektivt</h2></p>
+    
   </div>
+  
+    </div> <!--container end-->
+     </div> <!--banner end -->
+  
 
 
+
+
+
+
+
+
+
+
+<section class="company-heading intro-type" id="parallax-one">
+   <div class="container">
+      <div class="row product-title-info">
+         <div class="col-md-12">
+            <h1>
+               DATA. DATA. DATA.
+            </h1>
+            <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon" src="/assets/img/arrow-down-1.png"></a>
+         </div>
+      </div>
+   </div>
+   <div class="parallax" id="parallax-cta" style="background-image:url(https://www.solodev.com/assets/anchor/company-hero2.jpg);">
+      &nbsp;
+   </div>
+</section>
+<div class="main">
+   <section id="section2">
+      <div class="container jumbo">
+         <div class="jumbotron">
+            <h2>Let Big Data Change the Game</h2>
+            <p>WebCorpCo is all about making sure your marketing stack is in alignment with your company as well as the customers you serve. There is no 'one size fits all' approach to marketing. Every business is unique, customers are unique, and your marketing should be as well.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Läs mer</a></p>
+         </div>
+   </section>
+   </div>
 
 
 
@@ -87,13 +119,17 @@
   {{>footer}}
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
     crossorigin="anonymous"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>

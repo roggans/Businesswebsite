@@ -8,8 +8,23 @@ function checkScroll(){
     }
   }
   
-  if($('.navbar').length > 0){
+  if($('.nav').length > 0){
     $(window).on("scroll load resize", function(){
         checkScroll();
     });
   }
+
+  
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
