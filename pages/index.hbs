@@ -14,15 +14,16 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <title>Q2d</title>
- 
+
 </head>
 <!--{{>header}}  -->
 
 <body>
- 
+
   <section></section>
   <div class="banner">
-    <div class="container-fluid">
+      <!-- This container needs 100% height cause it only has absolute positioned elements, why it only show up as 0px height in the DOM -->
+    <div class="container-fluid h-100 position-relative"> <!-- You also want it relative so 'absolute' can calculate the position with left right top etc. -->
 
       <nav class="navbar fixed-top navbar-expand-lg my-navbar">
         <a class="navbar-brand" href="#"><h1 class="display-3">Q2d Solutions</h1></a>
@@ -57,23 +58,23 @@
               <a class="nav-link" href="#">Om oss</a>
             </li>
           </ul>
-          
+
         </div>
       </nav>
        <div class="centered">
     <p><h1>Licensfria webbportaler och <br>mobila appar</h1>
     <h1>Licensfri integration <br>IoT lösningar baserade på LoRaWan</h1></p>
-    
+
   </div>
   <a class="ct-btn-scroll ct-js-btn-scroll" href="#section1"><img alt="Arrow Down Icon" src="/assets/img/arrow-down-1.png"></a>
     </div> <!--container end-->
      </div> <!--banner end -->
-  
+
 <section id="section1" class=" module mb-5 mt-5">
-  <hr class="mb-5 mt-5">
+  <!-- <hr class="mb-5 mt-5"> -->
    <div class="container">
-     <hr class="mb-5 mt-5">
-     
+     <!-- <hr class="mb-5 mt-5"> -->
+
 <div class="card-deck mt-5">
 <div class="card">
     <div class="card-header h3">IoT lösningar, LoRaWan</div>
@@ -103,11 +104,11 @@
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  
+
 </div>
 
    </section>
-   
+
 
 
 <div class="main">
@@ -150,7 +151,7 @@ Pris: 6.000 SEK </p>
 
 
 <section>
-  
+
   <div class="module"></div>
   <div class="module"></div>
   <div class="module"></div>
@@ -160,7 +161,7 @@ Pris: 6.000 SEK </p>
   <div class="module"></div>
   <div class="module"></div>
   <div class="module"></div>
-  <div class="module"></div> 
+  <div class="module"></div>
   <div class="module"></div>
   <div class="module"></div>
   <div class="module"></div>
@@ -177,7 +178,7 @@ Pris: 6.000 SEK </p>
   <div class="module"></div>
 
 </section>
-  
+
 
 <hr>
   {{>footer}}
