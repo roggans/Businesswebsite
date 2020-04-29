@@ -11,6 +11,6 @@
 	"dependencies": {
 		"babel": "^6.23.0",
 		"enduro": "^1.4.46",
-		"jquery": "^3.3.1"
+		"jquery": "^3.5.0"
 	}
 }
